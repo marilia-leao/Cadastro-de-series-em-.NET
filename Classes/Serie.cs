@@ -9,19 +9,19 @@ namespace DIO.Series
 		private string Titulo { get; set; }
 		private string Descricao { get; set; }
 		private int Ano { get; set; }
-        private bool Excluido {get; set;}
-		private int Avaliacao {get; set;}
-
-        // Métodos
-		public Serie(int id, Genero genero, string titulo, string descricao, int ano, int avaliacao)
+		private Classificacao Classificacao { get; set; }
+		private bool Excluido { get; set; }
+   
+		// Métodos
+		public Serie(int id, Genero genero, string titulo, string descricao, int ano, Classificacao classificacao)
 		{
 			this.Id = id;
 			this.Genero = genero;
 			this.Titulo = titulo;
 			this.Descricao = descricao;
 			this.Ano = ano;
-            this.Excluido = false;
-			this.Avaliacao = avaliacao;
+			this.Classificacao = classificacao;
+			this.Excluido = Excluido;
 		}
 
         public override string ToString()
@@ -32,8 +32,8 @@ namespace DIO.Series
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano de Início: " + this.Ano + Environment.NewLine;
-			retorno += "Avalição: " + this.Avaliacao + Environment.NewLine;
-            retorno += "Excluido: " + this.Excluido;
+			retorno += "Classificação: " + this.Classificacao + Environment.NewLine;
+			retorno += "Excluido: " + this.Excluido + Environment.NewLine;
 			return retorno;
 		}
 
@@ -41,17 +41,18 @@ namespace DIO.Series
 		{
 			return this.Titulo;
 		}
-
 		public int retornaId()
 		{
 			return this.Id;
 		}
-        public bool retornaExcluido()
+		public bool retornaExcluido()
 		{
 			return this.Excluido;
 		}
-        public void Excluir() {
+        public void Excluir() 
+		{
             this.Excluido = true;
         }
     }
+
 }

@@ -11,3 +11,5 @@
 /home/eliezer/sandbox/dio/DIO.Series/obj/Debug/netcoreapp3.1/DIO.Series.dll
 /home/eliezer/sandbox/dio/DIO.Series/obj/Debug/netcoreapp3.1/DIO.Series.pdb
 /home/eliezer/sandbox/dio/DIO.Series/obj/Debug/netcoreapp3.1/DIO.Series.genruntimeconfig.cache
+C:\Users\Win7\Documents\Dio\Decola-tech\app-cadastro de series DIO\obj\Debug\netcoreapp3.1\DIO.Series.dll
+C:\Users\Win7\Documents\Dio\Decola-tech\app-cadastro de series DIO\obj\Debug\netcoreapp3.1\DIO.Series.pdb
